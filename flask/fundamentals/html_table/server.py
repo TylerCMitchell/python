@@ -3,6 +3,11 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+@app.route('/')
+def success():
+    return "Flask Table!"
+
+
 @app.route('/lists')
 def index():
     users = [
