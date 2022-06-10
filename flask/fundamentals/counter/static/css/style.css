@@ -1,0 +1,30 @@
+* {
+    padding: 20px;
+    margin: 20px;
+}
+
+.add {
+    color: white;
+    background-color: red;
+    border: solid 1px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.res {
+    color: white;
+    background-color: green;
+    border: solid 1px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.num {
+    padding-left: 150px;
+    padding-bottom: 40px;
+}
+
+.title {
+    padding-left: 100px;
+    padding-bottom: 40px;
+}
