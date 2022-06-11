@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="d-flex align-items-center p-4">
+        <h1>Dojo Survey</h1>
+    </div>
+    <div class="d-flex justify-content-evenly">
+        <form class="col-4 p-4 bg-dark text-light" action="/process" method="post">
+            <label for="name">Name</label>
+            <input class="form-control mb-3" type="text" name="name" id="name">
+            <label class="mb-3" for="location">Dojo Location</label>
+            <select name="location" id="location">
+                <option value="San Diego">San Diego</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+            </select>
+            <label class="mb-3" for="language">Favorite language</label>
+            <select name="language" id="language">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+            </select>
+            <br>
+            <label class="mb-3" for="comments">Comments</label>
+            <textarea class="materialize-textarea white-text" name="comments" id="comments" cols="30" rows="5"></textarea>
+            <div>
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
